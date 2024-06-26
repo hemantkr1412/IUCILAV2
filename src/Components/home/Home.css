@@ -1,0 +1,208 @@
+.Rline {
+  display: flex;
+  width: 100%;
+  background-color: #712f3c;
+  border: 10px solid #712f3c;
+  position: fixed;
+  top: 4rem;
+}
+
+.Rline.absolute {
+  position: absolute;
+}
+
+.Gline {
+  width: 100%;
+  border: 10px solid #90ac37;
+  z-index: 2000;
+}
+
+.home {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  position: sticky;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("/assets/home.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0 6rem 0 6rem;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 5rem;
+  min-height: 100vh;
+  justify-content: flex-end;
+}
+
+.introText{
+  margin-bottom: 8rem;
+}
+
+.introText h1 {
+  font-size: 56px;
+  font-weight: 700;
+  text-shadow: 2px 4px 8px #00000080;
+}
+
+.introText p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.intro2 {
+  display: flex;
+  width: 100%;
+  background-image: url("/assets/intro2BG.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 5rem 4rem 6rem 6rem;
+  gap: 4rem;
+  color: #fff;
+  z-index: 2000;
+  margin-top: 100vh;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.intro2part1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.title2 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 2px 4px 8px #00000080;
+}
+
+.title2 p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.intro2Img {
+  width: 100%;
+  display: flex;
+}
+
+.intro2Img img {
+  width: 85%;
+}
+
+.intro2part2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 30%;
+}
+
+.intro2part2 h2 {
+  font-size: clamp(1.62rem, 2.05vw, 2rem);
+  font-weight: 900;
+  color: #ac364f;
+  text-shadow: 2px 4px 8px #89b6a5;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.intro2part2 p {
+  font-size: clamp(0.8rem, 1.15vw, 1.125rem);
+  font-weight: 700;
+  text-shadow: 2px 4px 8px #ffffff80;
+  color: #000;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 935px) {
+  .intro {
+    top: 0;
+  }
+
+  .Rline {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .Gline {
+    border: 5px solid #90ac37;
+  }
+
+  .intro {
+    padding: 0 2rem;
+  }
+
+  .introText h1 {
+    font-size: 42px;
+  }
+
+  .introText p {
+    font-size: 16px;
+  }
+
+  .intro2Img img {
+    width: 75%;
+  }
+
+  .intro2 {
+    flex-direction: column;
+    background-image: url("/assets/intro2BGM.webp");
+    gap: 4rem;
+    padding: 2rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+  .intro2part1 {
+    width: 60%;
+  }
+
+  .intro2part2 {
+    width: 80%;
+    padding: 0 0 0 0;
+  }
+
+  .break {
+    display: none;
+  }
+  .title2 h2 {
+    font-size: 18px;
+  }
+
+  .title2 p {
+    font-size: 14px;
+  }
+
+  .intro2part2 h2 {
+    font-size: 26px;
+    text-shadow: 3px 4px 10px #ffffff;
+  }
+
+  .intro2part2 p {
+    font-size: 18px;
+    text-shadow: 2px 4px 8px #ffffff80;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .intro2Img img {
+    width: 100%;
+  }
+
+  .intro2part1 {
+    width: 80%;
+  }
+}

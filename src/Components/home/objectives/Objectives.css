@@ -1,0 +1,108 @@
+/* Objectives */
+
+.objectives {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("/assets/objective.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 4rem;
+  gap: 1.5rem;
+  z-index: 2000;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.obj,
+.val {
+  display: flex;
+  flex-direction: column;
+  width: 486px;
+  color: #000;
+}
+
+.obj h2,
+.val h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #272727;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.obj li,
+.val li {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.greenLine {
+  border: 2px solid #90ac37;
+  width: 50%;
+  position: relative;
+  left: 8rem;
+}
+
+@media only screen and (max-width: 1180px) {
+  .objectives {
+    padding: 4rem 2rem 0 2rem;
+  }
+
+  .obj,
+  .val {
+    width: 386px;
+  }
+}
+
+@media only screen and (max-width: 935px) {
+  .obj,
+  .val {
+    width: 315px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .objectives {
+    background-image: url("/assets/objectiveM.webp");
+    min-height: 100vh;
+    padding: 3rem 2rem 0rem 2rem;
+  }
+
+  .greenLine {
+    transform: translateX(-8rem);
+    margin-bottom: 1rem;
+  }
+
+  .obj,
+  .val {
+    width: 100%;
+  }
+  .val {
+    margin-bottom: 28rem;
+  }
+
+  .obj ul,
+  .val ul {
+    padding: 0 0 0 1.5rem;
+  }
+
+  .obj h2,
+  .val h2 {
+    font-size: 16px;
+    margin: 0;
+    line-height: 0;
+  }
+
+  .obj li,
+  .val li {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .val {
+    margin-bottom: 32rem;
+  }
+}

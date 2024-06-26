@@ -1,0 +1,11 @@
+#root {
+  max-width: 1280px;
+  margin: 0 ;
+  background-color: #fff;
+}
+
+.app{
+  width: 100vw;
+  background-color: #fff;
+}
+

@@ -1,0 +1,304 @@
+.comunidad {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.directors {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.directorsProfile {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.directorsProfile h3 {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.directorsBox {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.directorsImg {
+  width: 35%;
+}
+
+.directorsImg img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.directorsText {
+  width: 100%;
+  padding: 0 0 0 3rem;
+}
+
+.directorsText h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.directorsText p {
+  font-size: 18.48px;
+  font-weight: 500;
+}
+
+.slimGreen {
+  width: 100%;
+  border: 1px solid #90ac37;
+  margin: 4rem 0;
+}
+
+.comunidadIntro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("/assets/comunidad1.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.comunidadIntroText {
+  width: 60%;
+}
+
+.comunidadIntroText h2,
+.comunidadIntro2Text h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.comunidadIntroText p {
+  font-size: 18.48px;
+  text-align: justify;
+  color: #fff;
+}
+
+.comunidadIntro2Text p {
+  font-size: 18.48px;
+  color: #fff;
+}
+
+.comunidadIntro2 {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("/assets/comunidad2.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 105%;
+}
+
+.comunidadIntro2Text {
+  width: 60%;
+  height: 25%;
+  margin-bottom: 2rem;
+}
+
+.comunidadLast {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.comunidadLastTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.comunidadBoxes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6rem;
+  gap: 2rem;
+  background-image: url("/assets/comunidadLines2.webp"),
+    url("/assets/comunidadLines.webp");
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  background-size: 100% 45%;
+}
+
+.comunidadBox {
+  display: flex;
+}
+
+.alphabets {
+  background-color: #b03c54;
+  width: 90px;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 1.7rem;
+}
+
+.alphabets p {
+  margin-top: 0;
+}
+
+.comunidadBoxText {
+  background-color: #e6e6e6;
+  width: 700px;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.comunidadBoxText p {
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.comunidadBoxText ul {
+  padding-left: 25px;
+}
+
+.comunidadBoxText li {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.5;
+}
+
+@media only screen and (max-width: 1260px) {
+  .directorsProfile {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .directorsProfile h3 {
+    text-align: center;
+    font-size: 16px;
+  }
+  .directorsBox {
+    flex-direction: column;
+  }
+
+.directorsImg{
+  width: 270px;
+}
+
+  .directorsText{
+    padding: 0;
+  }
+
+  .directorsText h2 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .directorsText p {
+    font-size: 15px;
+  }
+
+  .comunidadIntro{
+    background-image: url("/assets/comunidadM.webp");
+    align-items: end;
+    margin-bottom: 2rem;
+  }
+
+  .comunidadIntro2{
+    background-image: url("/assets/comunidad2M.webp");
+  }
+
+  .comunidadIntroText, .comunidadIntro2Text{
+    width: 85%;
+    margin-top: 32rem;
+  }
+
+  .comunidadIntroText h2, .comunidadIntroText p{
+    color: #000;
+  }
+
+  .comunidadIntroText h2,
+  .comunidadIntro2Text h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .comunidadIntroText p,
+  .comunidadIntro2Text p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .comunidadLastTitle {
+    font-size: 18px;
+    padding: 0 0.8rem;
+  }
+
+  .comunidadBox {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .alphabets {
+    width: 100%;
+    text-align: right;
+    padding: 1rem 2rem 1rem 0;
+  }
+  .alphabets p{
+    margin-bottom: 0;
+  }
+
+  .comunidadBoxText {
+    width: 100%;
+  }
+
+  .comunidadBoxText p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .comunidadBoxText ul{
+    padding-left: 5px;
+  }
+  .comunidadBoxText li{
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .comunidadIntro{
+    margin-bottom: 2rem;
+    background-size: contain;
+  }
+    .comunidadIntroText {
+      margin-top: 34rem;
+    }
+
+    .comunidadIntro2Text{
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 410px) {
+    .comunidadIntroText {
+      margin-top: 28rem;
+    }
+    .comunidadIntro2{
+      background-size: cover;
+    }
+  }

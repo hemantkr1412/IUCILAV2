@@ -1,0 +1,114 @@
+/* Somos */
+
+.somos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 2000;
+    background-color: #fff;
+  }
+  
+  .somosTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: url("/assets/somos.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .somosTitle h1 {
+    color: #272727;
+    font-size: 56px;
+    font-weight: 900;
+    padding: 6rem 4rem 6rem 16rem;
+  }
+  
+  .somosTitle:hover h1 {
+    color: #ac364f;
+  }
+  
+  .somosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/assets/somosLines.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 2rem 6rem 2rem;
+    gap: 1rem;
+    background-color: #fff;
+  }
+  
+  .somosBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #601928;
+    width: 320px;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    flex: 1 1 calc(26.66% - 2rem);
+    max-width: calc(26.66% - 2rem);
+    box-sizing: border-box;
+    color: #fff;
+  }
+  
+  .somosBox h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+  }
+  
+  .somosBox p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 0;
+    line-height: 17px;
+  }
+  
+  @media only screen and (max-width: 1270px) {
+    .somosBox {
+      flex: none;
+      max-width: none;
+      box-sizing: none;
+    }
+  }
+
+  @media only screen and (max-width: 769px) {
+
+  .somosTitle {
+    background-image: url("/assets/somosM.webp");
+    min-height: 642px;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .somosTitle h1 {
+    position: relative;
+    top: -4rem;
+    left: 2rem;
+    font-size: 24px;
+    padding: 4rem 0rem;
+  }
+
+  .somosContainer {
+    padding: 4rem 1rem;
+    background-image: url("/assets/somosLineM.webp");
+  }
+
+  .somosBox {
+    width: 90%;
+  }
+
+  .somosBox h4 {
+    font-size: 8px;
+  }
+
+  .somosBox p {
+    font-size: 10px;
+  }
+  }

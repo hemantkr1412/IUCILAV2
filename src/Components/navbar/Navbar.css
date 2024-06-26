@@ -1,0 +1,138 @@
+.Rline {
+  display: flex;
+  width: 100%;
+  background-color: #712f3c;
+  border: 10px solid #712f3c;
+  position: static;
+  top: 4rem;
+}
+
+
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem 0;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.navbar.sticky{
+  position: sticky;
+}
+
+.navbar.relative{
+  position: relative;
+}
+
+.menu {
+  display: none;
+}
+
+.nav-logo {
+  display: flex;
+}
+
+.nav-links {
+  color: #000;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.nav-links p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.nav-links p:focus {
+  font-weight: 700;
+}
+
+
+@media only screen and (max-width: 935px) {
+  .navbar {
+    display: none;
+  }
+  .menu {
+    display: block;
+    z-index: 2000;
+  }
+
+  .menuLogo {
+    display: flex;
+    width: 100%;
+    background-color: #601928;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    z-index: 2000;
+  }
+
+  .leftArrow {
+    width: fit-content;
+    margin-left: 2rem;
+  }
+
+  .Mlogo {
+    width: fit-content;
+    margin-right: 2rem;
+  }
+
+  .menuIcon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 1;
+  }
+
+  /* Side Menu */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #b2c0ba;
+    color: #000;
+    transition: left 0.3s;
+    z-index: 1;
+  }
+
+  .menuList {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .menuList p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 1rem;
+    color: #000;
+  }
+
+  .mRedLine {
+    width: 100%;
+    border: 1px solid #601928;
+  }
+
+  .side-menu.open {
+    left: 0;
+  }
+
+  body.no-scroll {
+    overflow: hidden !important;
+  }
+}
