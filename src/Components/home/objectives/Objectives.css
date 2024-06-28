@@ -105,4 +105,7 @@
   .val {
     margin-bottom: 32rem;
   }
+  .objectives {
+    background-size: cover;
+  }
 }
