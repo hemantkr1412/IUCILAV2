@@ -6,6 +6,8 @@ import "./App.css";
 
 import Home from "./Components/home/Home";
 import Comunidad from "./Components/comunidad/Comunidad";
+import Institute from "./Components/institute/Institute";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/comunidadAcademica" element={<Comunidad />} />
+            <Route path="/institucional" element= {<Institute />} />
           </Routes>
         </div>
         <Footer />

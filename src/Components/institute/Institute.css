@@ -1,0 +1,364 @@
+.institute {
+  width: 100%;
+}
+
+.instituteIntro {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/assets/instituteIntro.png");
+  background-size: 100% 100%;
+  min-height: 90vh;
+  color: #fff;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.iipart1 {
+  width: 55%;
+}
+
+.iipart1 img {
+  width: 40%;
+}
+.iipart1 p {
+  font-size: 18px;
+  margin-top: 0;
+  text-align: justify;
+}
+.iipart2 {
+  width: 60%;
+}
+.iipart2 h2 {
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 1.4px;
+  border: 5px solid #fff;
+  padding: 1rem;
+  text-align: center;
+  border-style: dotted;
+  border-radius: 30px;
+}
+
+.instituteVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+}
+
+.institute video {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.titles {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  padding-top: 2rem;
+}
+
+.backgroundColor {
+  background-color: #f8f4f4;
+}
+.desarrollar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.desboxes {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 4rem;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+}
+
+.desbox {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.desboxTitle {
+  background-color: #b0344c;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.desboxTitle p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  margin: 0;
+}
+
+.desboxcontent {
+  background-color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.desboxcontentp1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.desboxcontentp1 li{
+  white-space: nowrap;
+}
+
+.desboxcontentp1 p{
+  padding-left: 10px;
+}
+
+.desboxcontent ul {
+  padding-left: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.desboxcontent p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dbcd {
+  border: 3.5px solid #b0344c;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border-style: dotted;
+}
+
+.fundadoras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fpart1,
+.fpart2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.fpart2 {
+  margin-top: 2rem;
+}
+
+.fpart1img,
+.fpart2img {
+  width: 390px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+}
+
+.fpart1text,
+.fpart2text {
+  width: 650px;
+  font-size: 18px;
+}
+
+.fpart1img img,
+.fpart2img img {
+  width: 100%;
+}
+
+.fpart1line {
+  border-left: 1px solid #344c8c;
+  height: 290px;
+}
+
+.fpart2line {
+  border-left: 1px solid #ec6434;
+  height: 565px;
+}
+
+.numText {
+  width: 80%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+}
+
+.numText h2 {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 1.4px;
+  text-align: justify;
+}
+
+.nums {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #b0344c;
+  border-radius: 10px;
+  color: #fff;
+  padding: 1rem 2rem 2rem 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.num p {
+  font-size: 68px;
+  font-weight: 300;
+  margin: 0;
+}
+.num h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.fundacionales {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #282424;
+  /* padding: 0 2rem; */
+}
+
+.funboxes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.funbox {
+  display: flex;
+  background-color: #fff;
+  width: 80%;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.funboxImg {
+  width: 40%;
+}
+
+.funboxImg img {
+  width: 100%;
+  height: 100%;
+}
+.funboxImg video {
+  /* width: 400px !important; */
+  width: 100% !important;
+  height: 100%;
+  background-color: #000;
+}
+
+.funbox-texts {
+  background-color: #fff;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.funText {
+  padding: 0 2rem;
+}
+
+.funText h3 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.funText p {
+  text-align: justify;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.fungreenLine {
+  border: 5px solid #90ac37;
+  width: 100%;
+}
+
+.redacademica {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.raboxes1 {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 1rem;
+}
+
+.rabox1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.rabox1 p{
+  font-size: 12px;
+  line-height: 1
+}
+
+.rabox1 img {
+  width: 100%;
+}
+
+.raboxes2 {
+  display: flex;
+  width: 85%;
+  gap: 2rem;
+  margin: auto;
+  padding:  4rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.rabox2 {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rabox2 img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .desboxes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

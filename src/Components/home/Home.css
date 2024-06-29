@@ -1,15 +1,16 @@
-.Rline {
+/* .Rline {
   display: flex;
   width: 100%;
   background-color: #712f3c;
   border: 10px solid #712f3c;
   position: fixed;
   top: 4rem;
+  z-index: 1;
 }
 
 .Rline.absolute {
   position: absolute;
-}
+} */
 
 .Gline {
   width: 100%;
@@ -37,11 +38,12 @@
   background-size: cover;
   padding: 0 6rem 0 6rem;
   color: #fff;
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 5rem;
   min-height: 100vh;
   justify-content: flex-end;
+  z-index: -4;
 }
 
 .introText{
@@ -68,7 +70,7 @@
   padding: 5rem 4rem 6rem 6rem;
   gap: 4rem;
   color: #fff;
-  z-index: 2000;
+  z-index: 4;
   margin-top: 100vh;
   min-height: 100vh;
   background-color: #fff;

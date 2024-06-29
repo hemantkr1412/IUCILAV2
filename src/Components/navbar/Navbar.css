@@ -3,10 +3,19 @@
   width: 100%;
   background-color: #712f3c;
   border: 10px solid #712f3c;
-  position: static;
+  position: sticky;
   top: 4rem;
 }
 
+.Rline.sticky{
+  position: sticky;
+  z-index: 0;
+}
+
+.Rline.absolute{
+  position: absolute;
+  z-index: 0;
+}
 
 .navbar {
   display: flex;
@@ -18,14 +27,16 @@
   background-color: #fff;
   top: 0;
   left: 0;
+  z-index: 2;
+  /* margin-bottom: 2rem; */
+}
+
+.navbar.sticky {
+  position: sticky;
   z-index: 0;
 }
 
-.navbar.sticky{
-  position: sticky;
-}
-
-.navbar.relative{
+.navbar.relative {
   position: relative;
 }
 
@@ -45,6 +56,12 @@
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
+  align-items: center;
+}
+
+.nav-link {
+  position: relative;
+  z-index: 4;
 }
 
 .nav-links p {
@@ -57,6 +74,41 @@
   font-weight: 700;
 }
 
+.menu.block{
+  display: block;
+}
+
+.menu.none{
+  display: none;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  z-index: 4;
+  border-radius: 10px;
+}
+
+.sub-menu p {
+  margin: 0;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.sub-menu p:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
 
 @media only screen and (max-width: 935px) {
   .navbar {

@@ -8,7 +8,7 @@ import Notice from "./notice/Notice";
 const Home = () => {
   return (
     <>
-      <div className="Rline"></div>
+      {/* <div className="Rline"></div> */}
       <div className="home">
         <div className="intro">
           <div className="introText">
