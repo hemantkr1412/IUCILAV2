@@ -53,6 +53,7 @@
 .institute video {
   width: 100% !important;
   height: 100% !important;
+  /* object-fit:inherit; */
 }
 
 .titles {
@@ -361,4 +362,113 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+@media only screen and (max-width: 935px) {
+.instituteIntro{
+  min-height: 100vh;
+}
+
+.funbox{
+  flex-direction: column;
+}
+.funboxImg{
+  width: 100%;
+}
+.funbox-texts{
+  width: 100%;
+}
+
+.funText h3{
+  text-align: center;
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .titles{
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+  .instituteIntro{
+    background-image: url("/assets/instituteIntroM.png");
+  }
+.iipart1, .iipart2{
+  width: 85%;
+}
+
+.iipart1 img{
+  width: 60%;
+}
+  .iipart1 p{
+  font-size: 15px;
+}
+.iipart2 h2{
+  font-size: 18px;
+}
+
+.iipart2 h2{
+  border: 2px solid #fff;
+  border-style: dashed;
+  border-radius: 10px;
+}
+.instituteIntro{
+  padding-bottom: 4rem;
+}
+
+.desboxTitle p{
+  font-size: 16px;
+}
+
+.desboxcontent ul, .desboxcontent p{
+  font-size: 12px;
+}
+.desboxcontentp1 img{
+  width: 6%;
+}
+
+.fpart1, .fpart2{
+  flex-direction: column;
+}
+.fpart1line, .fpart2line{
+  display: none;
+}
+.fpart1img, .fpart2img{
+  width: 100%;
+}
+.fpart1text, .fpart2text{
+  width: 100%;
+  font-size: 15px;
+}
+.numText{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.numText h2{
+  font-size: 18px;
+}
+.nums{
+  width: 250px;
+  flex-direction: column;
+}
+
+.funText h3{
+font-size: 16px;
+}
+.funText p{
+  font-size: 15px;
+}
+
+.raboxes1{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.rabox1{
+  width: 80%;
+}
 }

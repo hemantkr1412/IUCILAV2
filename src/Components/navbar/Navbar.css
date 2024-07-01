@@ -82,6 +82,8 @@
   display: none;
 }
 
+
+
 .sub-menu {
   position: absolute;
   top: 100%;
@@ -187,4 +189,30 @@
   body.no-scroll {
     overflow: hidden !important;
   }
+
+  .sub-menu {
+    position: relative;
+    top: 100%;
+    left: 0;
+    background-color: #b2c0ba;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    z-index: 4;
+    border-radius: 10px;
+  }
+  
+  .sub-menu p {
+    margin: 0;
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+
+  .whiteLine{
+    width: 100%;
+    border: 1px solid #FFF;
+  }
+  
+  
 }
