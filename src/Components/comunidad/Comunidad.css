@@ -69,7 +69,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url("/assets/comunidad1.webp");
+  background-image: url("/assets/comunidad1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -101,7 +101,7 @@
   align-items: end;
   justify-content: center;
   min-height: 100vh;
-  background-image: url("/assets/comunidad2.webp");
+  background-image: url("/assets/comunidad2.png");
   background-repeat: no-repeat;
   background-size: 100% 105%;
 }
@@ -213,13 +213,13 @@
   }
 
   .comunidadIntro{
-    background-image: url("/assets/comunidadM.webp");
+    background-image: url("/assets/comunidadM.png");
     align-items: end;
     margin-bottom: 2rem;
   }
 
   .comunidadIntro2{
-    background-image: url("/assets/comunidad2M.webp");
+    background-image: url("/assets/comunidad2M.png");
   }
 
   .comunidadIntroText, .comunidadIntro2Text{
