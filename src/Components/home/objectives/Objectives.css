@@ -65,7 +65,7 @@
 
 @media only screen and (max-width: 769px) {
   .objectives {
-    background-image: url("/assets/objectiveM.webp");
+    background-image: url("/assets/objectiveM.png");
     min-height: 100vh;
     padding: 3rem 2rem 0rem 2rem;
   }
@@ -80,7 +80,7 @@
     width: 100%;
   }
   .val {
-    margin-bottom: 28rem;
+    margin-bottom: 22rem;
   }
 
   .obj ul,
@@ -103,7 +103,7 @@
 
 @media only screen and (max-width: 450px) {
   .val {
-    margin-bottom: 32rem;
+    margin-bottom: 24rem;
   }
   .objectives {
     background-size: cover;

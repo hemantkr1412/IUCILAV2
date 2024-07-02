@@ -161,7 +161,7 @@
 
   .intro2 {
     flex-direction: column;
-    background-image: url("/assets/intro2BGM.webp");
+    background-image: url("/assets/intro2BGM.png");
     gap: 4rem;
     padding: 2rem 1rem;
     align-items: center;
