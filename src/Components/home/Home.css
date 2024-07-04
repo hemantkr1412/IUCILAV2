@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: url("/assets/home.png");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 31.35%, rgba(0, 0, 0, 0.6) 78.38%) ,url("/assets/home.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -161,7 +161,7 @@
 
   .intro2 {
     flex-direction: column;
-    background-image: url("/assets/intro2BGM.png");
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 71.22%, rgba(255, 255, 255, 0.8) 96.33%) ,url("/assets/intro2BGM.png");
     gap: 4rem;
     padding: 2rem 1rem;
     align-items: center;

@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import {Link as Scroll} from "react-scroll"
+import { Link as Scroll } from "react-scroll";
 import "./Navbar.css";
 
 const Sidebar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isSearchOpen, setSearchOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleSearch = () => {
+    setSearchOpen(!isSearchOpen);
+  };
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -13,26 +18,48 @@ const Sidebar = () => {
 
   const toggleDropdown = () => {
     if (isDropdownOpen) {
-      setMenuOpen(false); // Close the menu if the dropdown is already open
+      setMenuOpen(false);
     }
     setDropdownOpen(!isDropdownOpen);
   };
 
-
   useEffect(() => {
-    if (isMenuOpen) {
+    if ((isMenuOpen, isSearchOpen)) {
       document.body.classList.add("no-scroll");
     } else {
       document.body.classList.remove("no-scroll");
       setDropdownOpen(false);
     }
-  }, [isMenuOpen]);
+  }, [isMenuOpen, isSearchOpen]);
 
   return (
     <div className="menu">
       <div className="menuIcon" onClick={toggleMenu}>
-        <img src="/assets/menu.webp" />
+        <img src="/assets/menu.png" />
       </div>
+      <div className="searchMIcon" onClick={toggleSearch}>
+        <img src="/assets/searchM.png" />
+      </div>
+
+      <div className={`side-search ${isSearchOpen ? "open" : ""}`}>
+        <div className="menuLogo">
+          <img
+            onClick={toggleSearch}
+            className="leftArrow"
+            src="/assets/leftArrow.webp"
+          />
+          <Link to="/" onClick={toggleSearch}>
+            <img className="Mlogo" src="/assets/Mlogo.webp" />
+          </Link>
+        </div>
+        <div className="nav-search">
+          <div className="searchIcon">
+            <img src="/assets/searchM.png" />
+          </div>
+          <input placeholder="search..." type="text" />
+        </div>
+      </div>
+
       <div className={`side-menu ${isMenuOpen ? "open" : ""}`}>
         <div className="menuLogo">
           <img
@@ -50,20 +77,40 @@ const Sidebar = () => {
           </Link>
           {isDropdownOpen && (
             <div className="sub-menu">
-              <Scroll smooth={true} duration={500} onClick={toggleMenu} to="desarrollar">
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="desarrollar"
+              >
                 <p>Propósito y Actividades</p>
               </Scroll>
               <div className="whiteLine" />
-              <Scroll smooth={true} duration={500} onClick={toggleMenu} to="fundadoras">
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="fundadoras"
+              >
                 <p>Instituciones fundadoras</p>
               </Scroll>
               <div className="whiteLine" />
 
-              <Scroll smooth={true} duration={500} onClick={toggleMenu} to="fundacionales">
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="fundacionales"
+              >
                 <p>Antecedentes fundacionales</p>
               </Scroll>
               <div className="whiteLine" />
-              <Scroll smooth={true} duration={500} onClick={toggleMenu} to="redAcademica">
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="redAcademica"
+              >
                 <p>Red Académica</p>
               </Scroll>
               <div className="whiteLine" />

@@ -104,3 +104,9 @@
     font-size: 8px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .box-item{
+    width: 250px;
+  }
+}
