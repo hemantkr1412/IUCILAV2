@@ -47,11 +47,17 @@ const Navbar = () => {
             </div>
           </div>
           <Link to="/comunidadAcademica">
-            <p>Comunidad academica</p>
+            <p>Comunidad Academica</p>
           </Link>
-          <p>Propuesta académica</p>
+          <p>Propuesta Académica</p>
           <p>Noticias</p>
           <p>Buscador</p>
+        <div className="nav-search">
+          <input type="text"/>
+          <div className="searchIcon"> 
+            <img src="/assets/search.png" />
+          </div>
+        </div>
         </div>
       </div>
       <div className={`Rline ${isHomePage ? "sticky" : "absolute"}`} />

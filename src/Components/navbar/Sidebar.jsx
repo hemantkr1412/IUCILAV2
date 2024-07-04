@@ -72,10 +72,10 @@ const Sidebar = () => {
           )}
           <div className="mRedLine" />
           <Link to="/comunidadAcademica" onClick={toggleMenu}>
-            <p>Comunidad academica</p>
+            <p>Comunidad Academica</p>
           </Link>
           <div className="mRedLine" />
-          <p>Propuesta académica</p>
+          <p>Propuesta Académica</p>
           <div className="mRedLine" />
           <p>Noticias</p>
           <div className="mRedLine" />
