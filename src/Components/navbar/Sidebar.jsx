@@ -6,7 +6,8 @@ import "./Navbar.css";
 const Sidebar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSearchOpen, setSearchOpen] = useState(false);
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isInstitucionalDrop, setInstitucionalDrop] = useState(false);
+  const [isPropuestaDrop, setPropuestaDrop] = useState(false);
 
   const toggleSearch = () => {
     setSearchOpen(!isSearchOpen);
@@ -16,11 +17,20 @@ const Sidebar = () => {
     setMenuOpen(!isMenuOpen);
   };
 
-  const toggleDropdown = () => {
-    if (isDropdownOpen) {
+  const toggleInstitucional = () => {
+    if (isInstitucionalDrop) {
       setMenuOpen(false);
     }
-    setDropdownOpen(!isDropdownOpen);
+    setInstitucionalDrop(!isInstitucionalDrop);
+    setPropuestaDrop(false)
+  };
+
+  const togglePropuesta = () => {
+    if (isPropuestaDrop) {
+      setMenuOpen(false);
+    }
+    setPropuestaDrop(!isPropuestaDrop);
+    setInstitucionalDrop(false)
   };
 
   useEffect(() => {
@@ -28,7 +38,8 @@ const Sidebar = () => {
       document.body.classList.add("no-scroll");
     } else {
       document.body.classList.remove("no-scroll");
-      setDropdownOpen(false);
+      setInstitucionalDrop(false);
+      setPropuestaDrop(false);
     }
   }, [isMenuOpen, isSearchOpen]);
 
@@ -72,10 +83,10 @@ const Sidebar = () => {
           </Link>
         </div>
         <div className="menuList">
-          <Link to="/institucional" onClick={toggleDropdown}>
+          <Link to="/institucional" onClick={toggleInstitucional}>
             <p>Institucional</p>
           </Link>
-          {isDropdownOpen && (
+          {isInstitucionalDrop && (
             <div className="sub-menu">
               <Scroll
                 smooth={true}
@@ -122,7 +133,81 @@ const Sidebar = () => {
             <p>Comunidad Academica</p>
           </Link>
           <div className="mRedLine" />
-          <p>Propuesta Académica</p>
+          <Link to="/propuestaAcademica" onClick={togglePropuesta}>
+            <p>Propuesta Académica</p>
+          </Link>
+          {isPropuestaDrop && (
+            <div className="sub-menu">
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="prop"
+              >
+                <p>Propuesta General</p>
+              </Scroll>
+              <div className="whiteLine" />
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="c1"
+              >
+                <p>Certificación CILA</p>
+              </Scroll>
+              <div className="whiteLine" />
+
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="c2"
+              >
+                <p>Diplomatura Universitaria en Tasación de Inmuebles</p>
+              </Scroll>
+              <div className="whiteLine" />
+
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="c3"
+              >
+                <p>Diplomatura Universitaria en Negocios y Marketing Inmobiliario</p>
+              </Scroll>
+              <div className="whiteLine" />
+
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="c4"
+              >
+                <p>Diplomatura Universitaria en Proyectos Inmobiliarios</p>
+              </Scroll>
+              <div className="whiteLine" />
+
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="c5"
+              >
+                <p>Tecnicatura Universitaria en Corretaje y Negocios Inmobiliarios</p>
+              </Scroll>
+              <div className="whiteLine" />
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="c6"
+              >
+                <p>Licenciatura en Corretaje y Negocios Inmobiliarios</p>
+              </Scroll>
+              <div className="whiteLine" />
+              <br></br>
+            </div>
+          )}
           <div className="mRedLine" />
           <p>Noticias</p>
           <div className="mRedLine" />

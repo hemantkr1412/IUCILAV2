@@ -67,7 +67,7 @@
 .nav-links p {
   color: #000;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .nav-links p:focus {
@@ -95,12 +95,14 @@
   width: max-content;
   z-index: 4;
   border-radius: 10px;
+  padding: 0.5rem 0;
 }
 
 .sub-menu p {
   margin: 0;
   padding: 10px 20px;
   white-space: nowrap;
+  font-size: 14px;
 }
 
 .sub-menu p:hover {
@@ -110,6 +112,7 @@
 .nav-links a {
   text-decoration: none;
   color: inherit;
+  line-height: 0.4;
 }
 
 .nav-search {
@@ -215,6 +218,7 @@
     color: #000;
     transition: left 0.3s;
     z-index: 1;
+    overflow-y: scroll;
   }
 
   .side-search{
@@ -257,7 +261,7 @@
     border: none;
     display: flex;
     flex-direction: column;
-    width: max-content;
+    width: auto;
     z-index: 4;
     border-radius: 10px;
   }
@@ -265,7 +269,7 @@
   .sub-menu p {
     margin: 0;
     padding: 10px 20px;
-    white-space: nowrap;
+    white-space: break-spaces;
   }
 
   .whiteLine{

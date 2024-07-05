@@ -7,7 +7,9 @@ const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const isInstitutionalPage = location.pathname === "/institucional";
-  const [showSubMenu, setShowSubMenu] = useState(false);
+  const isPropuestaPage = location.pathname === "/propuestaAcademica";
+  const [showinstitucionalMenu, setShowinstitucionalMenu] = useState(false);
+  const [showpropMenu, setShowpropMenu] = useState(false);
 
 
   return (
@@ -21,14 +23,14 @@ const Navbar = () => {
         <div className="nav-links">
           <div 
             className="nav-link"
-            onMouseEnter={() => setShowSubMenu(true)}
-            onMouseLeave={() => setShowSubMenu(false)}
+            onMouseEnter={() => setShowinstitucionalMenu(true)}
+            onMouseLeave={() => setShowinstitucionalMenu(false)}
           >
             <Link to="/institucional">
               <p>Institucional</p>
             </Link>
             <div className={`menu ${isInstitutionalPage ? "block" : "none"}`}>
-            {showSubMenu && (
+            {showinstitucionalMenu && (
               <div className="sub-menu">
                 <Scroll smooth={true} duration={500} to="desarrollar">
                   <p>Propósito y Actividades</p>
@@ -49,9 +51,46 @@ const Navbar = () => {
           <Link to="/comunidadAcademica">
             <p>Comunidad Academica</p>
           </Link>
+
+        
+          <div 
+            className="nav-link"
+            onMouseEnter={() => setShowpropMenu(true)}
+            onMouseLeave={() => setShowpropMenu(false)}
+          >
+            <Link to='/propuestaAcademica'>
           <p>Propuesta Académica</p>
+          </Link>
+            <div className={`menu ${isPropuestaPage ? "block" : "none"}`}>
+            {showpropMenu && (
+              <div className="sub-menu">
+                <Scroll smooth={true} duration={500} to="prop">
+                  <p>Propuesta General</p>
+                </Scroll>
+                <Scroll smooth={true} duration={500} to="c1">
+                  <p>Certificación CILA </p>
+                </Scroll>
+                <Scroll smooth={true} duration={500} to="c2">
+                  <p>Diplomatura Universitaria en Tasación de Inmuebles</p>
+                </Scroll>
+                <Scroll smooth={true} duration={500} to="c3">
+                  <p>Diplomatura Universitaria en Negocios y Marketing Inmobiliario</p>
+                </Scroll>
+                <Scroll smooth={true} duration={500} to="c4">
+                  <p>Diplomatura Universitaria en Proyectos Inmobiliarios </p>
+                </Scroll>
+                <Scroll smooth={true} duration={500} to="c5">
+                  <p>Tecnicatura Universitaria en Corretaje y Negocios Inmobiliarios</p>
+                </Scroll>
+                <Scroll smooth={true} duration={500} to="c6">
+                  <p>Licenciatura en Corretaje y Negocios Inmobiliarios</p>
+                </Scroll>
+              </div>
+            )}
+            </div>
+          </div>
+
           <p>Noticias</p>
-          <p>Buscador</p>
         <div className="nav-search">
           <input type="text"/>
           <div className="searchIcon"> 
