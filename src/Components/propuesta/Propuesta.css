@@ -54,6 +54,7 @@
   background: url("/assets/propintro2part.png");
   background-size: 100% 100%;
   padding: 4rem 2rem;
+  opacity: 90%;
 }
 
 .pi2p1 {
@@ -186,7 +187,8 @@
 .formbox-text p {
   margin-top: 0;
 }
-.formbox-text-inner, .formbox-text-inner1 {
+.formbox-text-inner,
+.formbox-text-inner1 {
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -237,6 +239,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .form{
+    width: -webkit-fill-available;
+  }
   .formbox-page {
     width: 100%;
   }
@@ -253,7 +258,9 @@
   .propintro p {
     font-size: 16px;
   }
-
+.propintro2BG{
+  background-image: url("/assets/propintro2M.png");
+}
   .propintro2 {
     flex-direction: column;
     background-image: url("/assets/propintro2partM.png");
@@ -279,8 +286,8 @@
     width: 126px;
   }
 
-
-  .formbox{
+  
+  .formbox {
     width: 90%;
   }
   .formbox h1 {
@@ -294,47 +301,48 @@
     font-size: 10px;
     font-weight: 800;
   }
-  .formbox-page{
+  .formbox-page {
     text-align: justify;
   }
-  .formbox-text{
+  .formbox-text {
     padding: 1rem;
   }
-  .formbox-text p, .formbox-text ul {
+  .formbox-text p,
+  .formbox-text ul {
     font-size: 12px;
     line-height: 14px;
   }
-  .formbox-text h4{
+  .formbox-text h4 {
     font-size: 14px;
   }
-  .formbox-text ul{
+  .formbox-text ul {
     padding-left: 8px;
   }
-.fti1-text div h5{
-  font-size: 15px;
-}
-  .plan{
+  .fti1-text div h5 {
+    font-size: 15px;
+  }
+  .plan {
     font-size: 8px;
     height: 32px;
     border-radius: 5px;
   }
-.formbox-text-inner1{
-  align-items: center;
-}
-  .formbox-text-inner{
-    flex-direction: column;
+  .formbox-text-inner1 {
     align-items: center;
   }
-  .fti2{
+  .formbox-text-inner {
+    flex-direction: column;
+    align-items: self-start;
+  }
+  .fti2 {
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
   }
 
-  .propForms{
+  .propForms {
     background-image: url("/assets/certificate1M.png");
   }
-  .propForms1{
+  .propForms1 {
     background-image: url("/assets/certificateM.png");
   }
-
-  
 }
