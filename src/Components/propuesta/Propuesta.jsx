@@ -25,7 +25,7 @@ const Propuesta = () => {
               Inmobiliario, incorporando competencias para operar con clientes
               internacionales.
             </p>
-            <div className="formbox-text-inner">
+            <div className="formbox-text-inner1">
               <div>
                 <h4>Certificación a otorgar</h4>
                 <p>Corredor Inmobiliario Latinoamericano, CIL (72 horas)</p>
@@ -201,7 +201,8 @@ const Propuesta = () => {
                 <div className="form">
                   <iframe
                     width={350}
-                    height={390}
+                    height={300}
+                    style={{border:"none"}}
                     src="https://inscripciones.ugd.edu.ar/simplified_contact_cases/new"
                   />
                 </div>

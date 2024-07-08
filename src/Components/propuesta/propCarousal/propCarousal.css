@@ -9,6 +9,7 @@
   padding: 4rem 0rem;
   z-index: 2000;
   background-color: #fff;
+  z-index: 0;
 }
 
 .slider-box {
@@ -88,7 +89,7 @@
     display: none;
   }
 
-  .box-item {
+  .box-item1 {
     width: 175px;
     min-height: 265px;
   }
@@ -107,7 +108,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .box-item{
+  .box-item1{
     width: 250px;
   }
 }

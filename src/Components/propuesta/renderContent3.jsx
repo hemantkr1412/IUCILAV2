@@ -162,7 +162,8 @@ const RenderContent3 = () => {
           <div className="form">
             <iframe
               width={350}
-              height={390}
+              height={300}
+              style={{border:"none"}}
               src="https://inscripciones.ugd.edu.ar/simplified_contact_cases/new"
             />
           </div>
