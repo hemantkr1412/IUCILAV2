@@ -20,15 +20,16 @@ const Institute = () => {
         <div className="iipart2">
           <h2>
             Generador del conocimiento e impulsor de la jerarquización del
-            corretaje inmobiliario profesional en américa latina
+            corretaje inmobiliario profesional en América Latina
           </h2>
         </div>
       </div>
 
       <div className="instituteVideo">
-        <video controls className="videoPlayer">
+        {/* <video controls className="videoPlayer">
           <source src="/assets/video.mp4" />
-        </video>
+        </video> */}
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3iS-wB66E4M?si=QDk-I5BwKR5geqTy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <div className="backgroundColor">
         <Element name="desarrollar">
@@ -89,7 +90,7 @@ const Institute = () => {
 
         <Element name="fundadoras">
           <div className="fundadoras">
-            <h2 className="titles">Instituciones fundadoras</h2>
+            <h2 className="titles">Instituciones Fundadoras</h2>
 
             <div className="fpart1">
               <div className="fpart1img">
@@ -100,7 +101,7 @@ const Institute = () => {
                 <p>
                   La Confederación Inmobiliaria Latinoamericana, fue fundada en
                   2012, integra a las organizaciones líderes del mercado de
-                  bienes raíces en la región y represen- ta a más de 700.000
+                  bienes raíces en la región y representa a más de 700.000
                   Corredores y Empresas Inmobiliarias en 18 países de Lati-
                   noamérica.
                 </p>
@@ -108,7 +109,7 @@ const Institute = () => {
                   Brinda soporte institucional a toda la comunidad inmobiliaria,
                   defendiendo los intereses profesionales de los agremiados y
                   buscando la integración de los Ne- gocios Internacionales,
-                  creando condiciones éticas, competitivas y de excelen- cia
+                  creando condiciones éticas, competitivas y de excelencia
                   profesional.
                 </p>
                 <p>
@@ -215,12 +216,13 @@ const Institute = () => {
       <Element name="fundacionales">
         <div className="fundacionales">
           <h2 className="titles" style={{ color: "#FFF" }}>
-            Antecedentes fundacionales
+            Antecedentes Fundacionales
           </h2>
           <div className="funboxes">
             <div className="funbox">
-              <div className="funboxImg">
-                <video controls src="/assets/fun1.mp4" />
+              <div className="funboxImg1">
+                {/* <video controls src="/assets/fun1.mp4" /> */}
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XuNAFjuF7rs?si=R3NIM2OLL_Ab6NWK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
               <div className="funbox-texts">
                 <div className="funText">

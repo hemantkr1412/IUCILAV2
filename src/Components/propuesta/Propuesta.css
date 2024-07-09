@@ -250,7 +250,16 @@
   }
 }
 
+@media only screen and (max-width: 1000px) {
+.propuesta{
+  padding-top: 2rem;
+}
+}
+
 @media only screen and (max-width: 840px) {
+  .propuesta{
+    padding-top: 0;
+  }
   .propintro h1 {
     text-align: center;
     font-size: 22px;
@@ -303,6 +312,7 @@
   }
   .formbox-page {
     text-align: justify;
+    min-height: auto;
   }
   .formbox-text {
     padding: 1rem;
@@ -344,5 +354,11 @@
   }
   .propForms1 {
     background-image: url("/assets/certificateM.png");
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .propuesta{
+    padding-top: 2rem;
   }
 }

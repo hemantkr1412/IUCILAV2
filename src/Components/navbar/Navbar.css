@@ -4,7 +4,7 @@
   background-color: #712f3c;
   border: 10px solid #712f3c;
   position: sticky;
-  top: 4rem;
+  top: 3.6rem;
 }
 
 .Rline.sticky{
@@ -101,6 +101,7 @@
   padding: 10px 20px;
   white-space: nowrap;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .sub-menu p:hover {
