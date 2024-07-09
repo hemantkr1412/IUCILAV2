@@ -8,6 +8,7 @@ const Sidebar = () => {
   const [isSearchOpen, setSearchOpen] = useState(false);
   const [isInstitucionalDrop, setInstitucionalDrop] = useState(false);
   const [isPropuestaDrop, setPropuestaDrop] = useState(false);
+  const [isComunidadDrop, setComunidadDrop] = useState(false);
 
   const toggleSearch = () => {
     setSearchOpen(!isSearchOpen);
@@ -22,7 +23,8 @@ const Sidebar = () => {
       setMenuOpen(false);
     }
     setInstitucionalDrop(!isInstitucionalDrop);
-    setPropuestaDrop(false)
+    setPropuestaDrop(false);
+    setComunidadDrop(false);
   };
 
   const togglePropuesta = () => {
@@ -30,7 +32,17 @@ const Sidebar = () => {
       setMenuOpen(false);
     }
     setPropuestaDrop(!isPropuestaDrop);
-    setInstitucionalDrop(false)
+    setInstitucionalDrop(false);
+    setComunidadDrop(false);
+  };
+
+  const toggleComunidad = () => {
+    if (isComunidadDrop) {
+      setMenuOpen(false);
+    }
+    setComunidadDrop(!isComunidadDrop);
+    setInstitucionalDrop(false);
+    setPropuestaDrop(false);
   };
 
   useEffect(() => {
@@ -40,6 +52,7 @@ const Sidebar = () => {
       document.body.classList.remove("no-scroll");
       setInstitucionalDrop(false);
       setPropuestaDrop(false);
+      setComunidadDrop(false);
     }
   }, [isMenuOpen, isSearchOpen]);
 
@@ -129,9 +142,51 @@ const Sidebar = () => {
             </div>
           )}
           <div className="mRedLine" />
-          <Link to="/comunidadAcademica" onClick={toggleMenu}>
+          <Link to="/comunidadAcademica" onClick={toggleComunidad}>
             <p>Comunidad Academica</p>
           </Link>
+          {isComunidadDrop && (
+            <div className="sub-menu">
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="directors"
+              >
+                <p>Directors</p>
+              </Scroll>
+              <div className="whiteLine" />
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="docentes"
+              >
+                <p>Nuestros Docentes</p>
+              </Scroll>
+              <div className="whiteLine" />
+
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="estudiantes"
+              >
+                <p>Nuestros Estudiantes</p>
+              </Scroll>
+              <div className="whiteLine" />
+              <Scroll
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+                to="formacion"
+              >
+                <p>Formacion</p>
+              </Scroll>
+              <div className="whiteLine" />
+              <br></br>
+            </div>
+          )}
           <div className="mRedLine" />
           <Link to="/propuestaAcademica" onClick={togglePropuesta}>
             <p>Propuesta Académica</p>
@@ -147,61 +202,36 @@ const Sidebar = () => {
                 <p>Propuesta General</p>
               </Scroll>
               <div className="whiteLine" />
-              <Scroll
-                smooth={true}
-                duration={500}
-                onClick={toggleMenu}
-                to="c1"
-              >
+              <Scroll smooth={true} duration={500} onClick={toggleMenu} to="c1">
                 <p>Certificación CILA</p>
               </Scroll>
               <div className="whiteLine" />
 
-              <Scroll
-                smooth={true}
-                duration={500}
-                onClick={toggleMenu}
-                to="c2"
-              >
+              <Scroll smooth={true} duration={500} onClick={toggleMenu} to="c2">
                 <p>Diplomatura Universitaria en Tasación de Inmuebles</p>
               </Scroll>
               <div className="whiteLine" />
 
-              <Scroll
-                smooth={true}
-                duration={500}
-                onClick={toggleMenu}
-                to="c3"
-              >
-                <p>Diplomatura Universitaria en Negocios y Marketing Inmobiliario</p>
+              <Scroll smooth={true} duration={500} onClick={toggleMenu} to="c3">
+                <p>
+                  Diplomatura Universitaria en Negocios y Marketing Inmobiliario
+                </p>
               </Scroll>
               <div className="whiteLine" />
 
-              <Scroll
-                smooth={true}
-                duration={500}
-                onClick={toggleMenu}
-                to="c4"
-              >
+              <Scroll smooth={true} duration={500} onClick={toggleMenu} to="c4">
                 <p>Diplomatura Universitaria en Proyectos Inmobiliarios</p>
               </Scroll>
               <div className="whiteLine" />
 
-              <Scroll
-                smooth={true}
-                duration={500}
-                onClick={toggleMenu}
-                to="c5"
-              >
-                <p>Tecnicatura Universitaria en Corretaje y Negocios Inmobiliarios</p>
+              <Scroll smooth={true} duration={500} onClick={toggleMenu} to="c5">
+                <p>
+                  Tecnicatura Universitaria en Corretaje y Negocios
+                  Inmobiliarios
+                </p>
               </Scroll>
               <div className="whiteLine" />
-              <Scroll
-                smooth={true}
-                duration={500}
-                onClick={toggleMenu}
-                to="c6"
-              >
+              <Scroll smooth={true} duration={500} onClick={toggleMenu} to="c6">
                 <p>Licenciatura en Corretaje y Negocios Inmobiliarios</p>
               </Scroll>
               <div className="whiteLine" />
@@ -209,9 +239,9 @@ const Sidebar = () => {
             </div>
           )}
           <div className="mRedLine" />
+          <Link to="/noticias" onClick={toggleMenu}>
           <p>Noticias</p>
-          <div className="mRedLine" />
-          <p>Buscador</p>
+          </Link>
           <div className="mRedLine" />
         </div>
       </div>
