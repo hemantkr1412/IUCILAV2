@@ -66,7 +66,7 @@ const Comunidad = () => {
       </Link>
 
 
-<Link name="formacion">
+<Link className="formacion" name="formacion">
       <div className="comunidadLast">
         <p className="comunidadLastTitle">
           De acuerdo a su situación y aspiraciones, pueden acceder a nuestra
