@@ -128,7 +128,8 @@ const Propuesta = () => {
           </p>
           <p>
             Los Licenciados CILA, como poseedores del máximo Título profesional,
-            conformarán una Comunidad Especial de Asesoramien.
+            conformarán una Comunidad Especial de Asesoramiento y desarrollo de
+            Negocios Inmobiliarios a nivel Latinoamericano.
           </p>
         </div>
       </Element>
@@ -202,7 +203,7 @@ const Propuesta = () => {
                   <iframe
                     width={350}
                     height={300}
-                    style={{border:"none"}}
+                    style={{ border: "none" }}
                     src="https://inscripciones.ugd.edu.ar/simplified_contact_cases/new"
                   />
                 </div>
