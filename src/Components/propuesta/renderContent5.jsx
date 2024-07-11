@@ -75,7 +75,9 @@ const RenderContent5 = () => {
                     Plan de Estudios
                   </button>
                 </Link>
+                <Link to='https://virtual.ugd.edu.ar/ar/equivalencies/studentQuery' target="_blank">
                 <button className="plan">Equivalencias</button>
+                </Link>
               </div>
             </div>
           </div>

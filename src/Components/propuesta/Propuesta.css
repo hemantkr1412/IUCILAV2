@@ -198,6 +198,7 @@
 .plan {
   background-color: #681c2c;
   height: 55px;
+  width: 154px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,6 +337,7 @@
   .plan {
     font-size: 8px;
     height: 32px;
+    width: auto;
     border-radius: 5px;
     color: #fff;
   }

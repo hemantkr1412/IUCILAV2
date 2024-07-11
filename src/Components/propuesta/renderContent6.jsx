@@ -77,7 +77,9 @@ const RenderContent6 = () => {
                     Plan de Estudios
                   </button>
                 </Link>
-                <button className="plan">Equivalencias</button>
+                <Link to="https://virtual.ugd.edu.ar/ar/equivalencies/studentQuery" target="_blank">
+                  <button className="plan">Equivalencias</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -133,50 +135,50 @@ const RenderContent6 = () => {
 
   return (
     <Element name="c6">
-    <div id="c6" className="propForms1">
-      <div className="formbox">
-        <h2>
-          Licenciatura en Corretaje<br></br>y Negocios Inmobiliarios
-        </h2>
+      <div id="c6" className="propForms1">
+        <div className="formbox">
+          <h2>
+            Licenciatura en Corretaje<br></br>y Negocios Inmobiliarios
+          </h2>
 
-        <div className="formbox-content">
-          <div className="formbox-page">
-            <div className="formbox-nav">
-              <button
-                style={getButtonStyle(1)}
-                onClick={() => handleButtonClick(1)}
-              >
-                Presentación
-              </button>
-              <div className="bline" />
-              <button
-                style={getButtonStyle(2)}
-                onClick={() => handleButtonClick(2)}
-              >
-                Destinatarios
-              </button>
-              <div className="bline" />
-              <button
-                style={getButtonStyle(3)}
-                onClick={() => handleButtonClick(3)}
-              >
-                Alcances y Salida Laboral
-              </button>
+          <div className="formbox-content">
+            <div className="formbox-page">
+              <div className="formbox-nav">
+                <button
+                  style={getButtonStyle(1)}
+                  onClick={() => handleButtonClick(1)}
+                >
+                  Presentación
+                </button>
+                <div className="bline" />
+                <button
+                  style={getButtonStyle(2)}
+                  onClick={() => handleButtonClick(2)}
+                >
+                  Destinatarios
+                </button>
+                <div className="bline" />
+                <button
+                  style={getButtonStyle(3)}
+                  onClick={() => handleButtonClick(3)}
+                >
+                  Alcances y Salida Laboral
+                </button>
+              </div>
+              {renderContent()}
             </div>
-            {renderContent()}
-          </div>
 
-          <div className="form">
-            <iframe
-              width={350}
-              height={300}
-              style={{border:"none"}}
-              src="https://inscripciones.ugd.edu.ar/simplified_contact_cases/new"
-            />
+            <div className="form">
+              <iframe
+                width={350}
+                height={300}
+                style={{ border: "none" }}
+                src="https://inscripciones.ugd.edu.ar/simplified_contact_cases/new"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </Element>
   );
 };
