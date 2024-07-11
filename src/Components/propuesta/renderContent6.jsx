@@ -47,7 +47,7 @@ const RenderContent6 = () => {
                     <img src="/assets/form2.png" />
                   </div>
                   <div>
-                    <h5>Título Intermedio:</h5>
+                    <h5>Títulos Intermedio:</h5>
                     <ul>
                       <li>Corredor Inmobiliario (3 años)</li>
                     </ul>
@@ -58,7 +58,7 @@ const RenderContent6 = () => {
                     <img src="/assets/form3.png" />
                   </div>
                   <div>
-                    <h5>Título aprobados por:</h5>
+                    <h5>Títulos aprobados por:</h5>
                     <ul>
                       <li>
                         Resolución del Ministerio de Educación Nro. 2349/22.
@@ -133,7 +133,7 @@ const RenderContent6 = () => {
 
   return (
     <Element name="c6">
-    <div className="propForms1">
+    <div id="c6" className="propForms1">
       <div className="formbox">
         <h2>
           Licenciatura en Corretaje<br></br>y Negocios Inmobiliarios

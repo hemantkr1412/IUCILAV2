@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./Components/navbar/Navbar";
 import Sidebar from "./Components/navbar/Sidebar";
 import Footer from "./Components/footer/Footer";
@@ -10,6 +10,22 @@ import Institute from "./Components/institute/Institute";
 import Propuesta from "./Components/propuesta/Propuesta";
 import Noticias from "./Components/noticias/Noticias";
 
+function Main() {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  return (
+    <div className={`page ${isHome ? "sticky" : "relative"}`}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/comunidadAcademica" element={<Comunidad />} />
+        <Route path="/institucional" element={<Institute />} />
+        <Route path="/propuestaAcademica" element={<Propuesta />} />
+        <Route path="/noticias" element={<Noticias />} />
+      </Routes>
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -17,15 +33,7 @@ function App() {
       <Router>
         <Navbar />
         <Sidebar />
-        <div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/comunidadAcademica" element={<Comunidad />} />
-            <Route path="/institucional" element= {<Institute />} />
-            <Route path="/propuestaAcademica" element={<Propuesta />} />
-            <Route path="/noticias" element={<Noticias/>} />
-          </Routes>
-        </div>
+        <Main />
         <Footer />
       </Router>
     </div>

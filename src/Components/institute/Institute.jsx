@@ -33,7 +33,7 @@ const Institute = () => {
       </div>
       <div className="backgroundColor">
         <Element name="desarrollar">
-          <div className="desarrollar">
+          <div id="desarrollar" className="desarrollar">
             <h2 className="titles">Actividades a desarrollar</h2>
             <div className="desboxes">
               <div className="desbox">
@@ -89,7 +89,7 @@ const Institute = () => {
         </Element>
 
         <Element name="fundadoras">
-          <div className="fundadoras">
+          <div id="fundadoras" className="fundadoras">
             <h2 className="titles">Instituciones Fundadoras</h2>
 
             <div className="fpart1">
@@ -213,7 +213,7 @@ const Institute = () => {
         </Element>
       </div>
 
-      <Element name="fundacionales">
+      <Element id="fundacionales" name="fundacionales">
         <div className="fundacionales">
           <h2 className="titles" style={{ color: "#FFF" }}>
             Antecedentes Fundacionales
@@ -281,7 +281,7 @@ const Institute = () => {
       </Element>
 
       <Element name="redAcademica">
-        <div className="redAcademica">
+        <div id="redAcademica" className="redAcademica">
           <h2 className="titles">Red Académica</h2>
           <div className="raboxes1">
             <div className="rabox1">

@@ -71,7 +71,7 @@
   min-height: 100vh;
   background-image: url("/assets/comunidad1.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .comunidadIntroText {
@@ -103,13 +103,14 @@
   min-height: 100vh;
   background-image: url("/assets/comunidad2.png");
   background-repeat: no-repeat;
-  background-size: 100% 105%;
+  background-size: cover;
+  /* background-size: 100% 105%; */
 }
 
 .comunidadIntro2Text {
   width: 60%;
   height: 25%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .comunidadLast {
@@ -222,10 +223,12 @@
     background-image: url("/assets/comunidadM.png");
     align-items: end;
     margin-bottom: 2rem;
+    background-size: 100% 100%;
   }
 
   .comunidadIntro2{
     background-image: url("/assets/comunidad2M.png");
+    background-size: 100% 100%;
   }
 
   .comunidadIntroText, .comunidadIntro2Text{

@@ -48,7 +48,7 @@ const RenderContent2 = () => {
                     <img src="/assets/form3.png" />
                   </div>
                   <div>
-                    <h5>Título aprobados por:</h5>
+                    <h5>Títulos aprobados por:</h5>
                     <ul>
                       <li>
                         Resolución del Ministerio de Educación Nro. 2349/22.
@@ -128,7 +128,7 @@ const RenderContent2 = () => {
 
   return (
     <Element name="c2">
-      <div className="propForms1">
+      <div id="c2" className="propForms1">
         <div className="formbox">
           <h2>
             Diplomatura Universitaria en<br></br> Tasación de Inmuebles

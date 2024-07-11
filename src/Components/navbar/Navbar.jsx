@@ -1,21 +1,57 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { Link, useLocation } from "react-router-dom";
-import { Link as Scroll } from "react-scroll";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const isHomePage = location.pathname === "/";
-  const isInstitutionalPage = location.pathname === "/institucional";
-  const isPropuestaPage = location.pathname === "/propuestaAcademica";
-  const isComunidadPage = location.pathname === "/comunidadAcademica";
   const [showinstitucionalMenu, setShowinstitucionalMenu] = useState(false);
   const [showpropMenu, setShowpropMenu] = useState(false);
   const [showcomunidadMenu, setShowcomunidadMenu] = useState(false);
+  const [zIndex, setZIndex] = useState(isHomePage ? -3 : 1);
+
+  const handleScrollToSection = (to, element) => {
+    navigate(to);
+    setTimeout(() => {
+      const section = document.getElementById(element);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block:"start" });
+      }
+    }, 500);
+  };
+
+  useEffect(() => {
+    const hash = location.hash.replace("#", "");
+    if (hash) {
+      const section = document.getElementById(hash);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block:"start" });
+      }
+    }
+  }, [location]);
+
+    useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setZIndex(-4);
+      } else {
+        setZIndex(-3);
+      }
+    };
+
+    if (isHomePage) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isHomePage]);
 
   return (
     <>
-      <div className={`navbar ${isHomePage ? "sticky" : "relative"}`}>
+      <div className={`navbar ${isHomePage ? "sticky" : "relative"}`} style={{zIndex:zIndex}}>
         <div className="nav-logo">
           <Link to="/">
             <img src="/assets/logo.webp" alt="Logo" />
@@ -30,24 +66,22 @@ const Navbar = () => {
             <Link to="/institucional">
               <p>Institucional</p>
             </Link>
-            <div className={`menu ${isInstitutionalPage ? "block" : "none"}`}>
-              {showinstitucionalMenu && (
-                <div className="sub-menu">
-                  <Scroll smooth={true} duration={500} to="desarrollar">
-                    <p>Propósito y Actividades</p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="fundadoras">
-                    <p>Instituciones Fundadoras </p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="fundacionales">
-                    <p>Antecedentes Fundacionales</p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="redAcademica">
-                    <p>Red Académica</p>
-                  </Scroll>
-                </div>
-              )}
-            </div>
+            {showinstitucionalMenu && (
+              <div className="sub-menu">
+                <p onClick={() => handleScrollToSection("/institucional", "desarrollar")}>
+                  Propósito y Actividades
+                </p>
+                <p onClick={() => handleScrollToSection("/institucional", "fundadoras")}>
+                  Instituciones Fundadoras
+                </p>
+                <p onClick={() => handleScrollToSection("/institucional", "fundacionales")}>
+                  Antecedentes Fundacionales
+                </p>
+                <p onClick={() => handleScrollToSection("/institucional", "redAcademica")}>
+                  Red Académica
+                </p>
+              </div>
+            )}
           </div>
 
           <div
@@ -56,26 +90,24 @@ const Navbar = () => {
             onMouseLeave={() => setShowcomunidadMenu(false)}
           >
             <Link to="/comunidadAcademica">
-              <p>Comunidad Academica</p>
+              <p>Comunidad Académica</p>
             </Link>
-            <div className={`menu ${isComunidadPage ? "block" : "none"}`}>
-              {showcomunidadMenu && (
-                <div className="sub-menu">
-                  <Scroll smooth={true} duration={500} to="directors">
-                    <p>Director Ejecutivo</p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="docentes">
-                    <p>Nuestros Docentes</p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="estudiantes">
-                    <p>Nuestros Estudiantes</p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="formacion">
-                    <p>Formacion</p>
-                  </Scroll>
-                </div>
-              )}
-            </div>
+            {showcomunidadMenu && (
+              <div className="sub-menu">
+                <p onClick={() => handleScrollToSection("/comunidadAcademica", "directors")}>
+                  Director Ejecutivo
+                </p>
+                <p onClick={() => handleScrollToSection("/comunidadAcademica", "docentes")}>
+                  Nuestros Docentes
+                </p>
+                <p onClick={() => handleScrollToSection("/comunidadAcademica", "estudiantes")}>
+                  Nuestros Estudiantes
+                </p>
+                <p onClick={() => handleScrollToSection("/comunidadAcademica", "formacion")}>
+                  Formacion
+                </p>
+              </div>
+            )}
           </div>
 
           <div
@@ -86,39 +118,31 @@ const Navbar = () => {
             <Link to="/propuestaAcademica">
               <p>Propuesta Académica</p>
             </Link>
-            <div className={`menu ${isPropuestaPage ? "block" : "none"}`}>
-              {showpropMenu && (
-                <div className="sub-menu">
-                  <Scroll smooth={true} duration={500} to="prop">
-                    <p>Propuesta General</p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="c1">
-                    <p>Certificación CILA </p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="c2">
-                    <p>Diplomatura Universitaria en Tasación de Inmuebles</p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="c3">
-                    <p>
-                      Diplomatura Universitaria en Negocios y Marketing
-                      Inmobiliario
-                    </p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="c4">
-                    <p>Diplomatura Universitaria en Proyectos Inmobiliarios </p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="c5">
-                    <p>
-                      Tecnicatura Universitaria en Corretaje y Negocios
-                      Inmobiliarios
-                    </p>
-                  </Scroll>
-                  <Scroll smooth={true} duration={500} to="c6">
-                    <p>Licenciatura en Corretaje y Negocios Inmobiliarios</p>
-                  </Scroll>
-                </div>
-              )}
-            </div>
+            {showpropMenu && (
+              <div className="sub-menu">
+                <p onClick={() => handleScrollToSection("/propuestaAcademica", "prop")}>
+                  Propuesta General
+                </p>
+                <p onClick={() => handleScrollToSection("/propuestaAcademica", "c1")}>
+                  Certificación CILA
+                </p>
+                <p onClick={() => handleScrollToSection("/propuestaAcademica", "c2")}>
+                  Diplomatura Universitaria en Tasación de Inmuebles
+                </p>
+                <p onClick={() => handleScrollToSection("/propuestaAcademica", "c3")}>
+                  Diplomatura Universitaria en Negocios y Marketing Inmobiliario
+                </p>
+                <p onClick={() => handleScrollToSection("/propuestaAcademica", "c4")}>
+                  Diplomatura Universitaria en Proyectos Inmobiliarios
+                </p>
+                <p onClick={() => handleScrollToSection("/propuestaAcademica", "c5")}>
+                  Tecnicatura Universitaria en Corretaje y Negocios Inmobiliarios
+                </p>
+                <p onClick={() => handleScrollToSection("/propuestaAcademica", "c6")}>
+                  Licenciatura en Corretaje y Negocios Inmobiliarios
+                </p>
+              </div>
+            )}
           </div>
 
           <Link to="/noticias">
@@ -128,7 +152,7 @@ const Navbar = () => {
           <div className="nav-search">
             <input type="text" />
             <div className="searchIcon">
-              <img src="/assets/search.png" />
+              <img src="/assets/search.png" alt="Search Icon" />
             </div>
           </div>
         </div>

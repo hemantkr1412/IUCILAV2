@@ -106,15 +106,17 @@ const Propuesta = () => {
   return (
     <div className="propuesta">
       <Element name="prop" className="propuesta">
-        <div className="propintro">
+        <div id="prop" className="propintro">
           <h1>Propuesta General</h1>
           <p>
             Si cursaste una carrera de Corredor Inmobiliario o similar, se te
             reconocerán las materias que hayas aprobado.
           </p>
           <p>
-            colegios profesionales, otorgamos materias en base a tus
-            competencias laborales.
+            Siendo idóneo con antigüedad mayor a cinco años en la actividad
+            inmobiliaria, siendo reconocidos y matriculados por los colegios
+            profesionales, otorgamos materias en base a tus competencias
+            laborales.
           </p>
           <p>
             Para obtener este TÍTULO de GRADO UNIVERSITARIO deberás cursar las
@@ -167,7 +169,7 @@ const Propuesta = () => {
 
       <div className="propformsBG">
         <Element name="c1" className="propForms">
-          <div className="propForms">
+          <div id="c1" className="propForms">
             <div className="formbox">
               <h1>Certificación CILA</h1>
               <h2>Corredor Inmobiliario Latinoamericano (CIL)</h2>

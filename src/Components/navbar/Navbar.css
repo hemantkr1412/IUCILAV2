@@ -9,12 +9,12 @@
 
 .Rline.sticky{
   position: sticky;
-  z-index: 0;
+  z-index: -4;
 }
 
 .Rline.absolute{
   position: absolute;
-  z-index: 0;
+  z-index:1;
 }
 
 .navbar {
@@ -27,17 +27,17 @@
   background-color: #fff;
   top: 0;
   left: 0;
-  z-index: 2;
   /* margin-bottom: 2rem; */
 }
 
 .navbar.sticky {
   position: sticky;
-  z-index: 0;
+  z-index: -3;
 }
 
 .navbar.relative {
-  position: relative;
+  position: relative !important;
+  z-index: 2 !important;
 }
 
 .menu {
@@ -83,7 +83,7 @@
 
 
 .sub-menu {
-  position: absolute;
+  position: absolute !important;
   top: 100%;
   left: 0;
   background-color: white;
@@ -91,14 +91,14 @@
   display: flex;
   flex-direction: column;
   width: max-content;
-  z-index: 4;
+  z-index: 2000;
   border-radius: 10px;
   padding: 0.5rem 0;
 }
 
 .sub-menu p {
   margin: 0;
-  padding: 10px 20px;
+  padding: 2px 20px;
   white-space: nowrap;
   font-size: 14px;
   cursor: pointer;
@@ -253,7 +253,7 @@
   }
 
   .sub-menu {
-    position: relative;
+    position: relative !important;
     top: 100%;
     left: 0;
     background-color: #b2c0ba;

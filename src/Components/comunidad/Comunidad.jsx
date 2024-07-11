@@ -7,7 +7,7 @@ const Comunidad = () => {
   return (
     <div className="comunidad">
       <Link name="directors">
-        <div className="directors">
+        <div id="directors" className="directors">
           {directorsInfo.map((info, index) => (
             <div key={index} className="directorsProfile">
               <h3>{info.title}</h3>
@@ -29,7 +29,7 @@ const Comunidad = () => {
       </Link>
 
       <Link name="docentes">
-        <div className="comunidadIntro">
+        <div id="docentes" className="comunidadIntro">
           <div className="comunidadIntroText">
             <h2>Nuestros Docentes</h2>
             <p>
@@ -51,7 +51,7 @@ const Comunidad = () => {
       </Link>
 
       <Link name="estudiantes">
-        <div className="comunidadIntro2">
+        <div id="estudiantes" className="comunidadIntro2">
           <div className="comunidadIntro2Text">
             <h2>Nuestros Estudiantes</h2>
             <p>
@@ -67,7 +67,7 @@ const Comunidad = () => {
 
 
 <Link className="formacion" name="formacion">
-      <div className="comunidadLast">
+      <div id="formacion" className="comunidadLast">
         <p className="comunidadLastTitle">
           De acuerdo a su situación y aspiraciones, pueden acceder a nuestra
           formación de distintas formas:

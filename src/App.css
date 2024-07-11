@@ -6,6 +6,15 @@
 
 .app{
   width: 100vw;
-  background-color: #fff;
+  /* background-color: #fff; */
+  position: relative;
+  z-index: 4;
 }
+
+.page.sticky{
+  position: sticky;
+  z-index: -4;
+}
+
+
 

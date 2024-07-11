@@ -47,7 +47,7 @@ const RenderContent5 = () => {
                     <img src="/assets/form2.png" />
                   </div>
                   <div>
-                    <h5>Título Intermedio:</h5>
+                    <h5>Títulos Intermedio:</h5>
                     <ul>
                       <li>Corredor Inmobiliario (3 años)</li>
                     </ul>
@@ -58,7 +58,7 @@ const RenderContent5 = () => {
                     <img src="/assets/form3.png" />
                   </div>
                   <div>
-                    <h5>Título aprobados por:</h5>
+                    <h5>Títulos aprobados por:</h5>
                     <ul>
                       <li>Resolución Ministerio de Educación Nro. 2003/23.</li>
                     </ul>
@@ -131,7 +131,7 @@ const RenderContent5 = () => {
 
   return (
     <Element name="c5">
-    <div className="propForms1">
+    <div id="c5" className="propForms1">
       <div className="formbox">
         <h2>
           Tecnicatura Universitaria en <br></br>Corretaje y Negocios

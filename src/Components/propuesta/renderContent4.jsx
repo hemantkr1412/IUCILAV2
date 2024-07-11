@@ -48,7 +48,7 @@ const RenderContent4 = () => {
                     <img src="/assets/form3.png" />
                   </div>
                   <div>
-                    <h5>Título aprobados por:</h5>
+                    <h5>Títulos aprobados por:</h5>
                     <ul>
                       <li>Resolución Ministerio de Educación Nro. 2349/22.</li>
                     </ul>
@@ -126,7 +126,7 @@ const RenderContent4 = () => {
 
   return (
     <Element name="c4">
-    <div className="propForms1">
+    <div id="c4" className="propForms1">
       <div className="formbox">
         <h2>
           Diplomatura Universitaria<br></br>en Proyectos Inmobiliarios
