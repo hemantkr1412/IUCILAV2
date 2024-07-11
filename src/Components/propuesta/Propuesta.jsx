@@ -8,6 +8,7 @@ import RenderContent4 from "./renderContent4";
 import RenderContent3 from "./renderContent3";
 import RenderContent2 from "./renderContent2";
 import PropCarousal from "./propCarousal/propCarousal";
+import Carousal from "../home/carousal/Carousal";
 
 const Propuesta = () => {
   const [activeButton, setActiveButton] = useState(1);
@@ -27,7 +28,7 @@ const Propuesta = () => {
             </p>
             <div className="formbox-text-inner1">
               <div>
-                <h4>Certificación a otorgar</h4>
+                <h5>Certificación a otorgar</h5>
                 <p>Corredor Inmobiliario Latinoamericano, CIL (72 horas)</p>
               </div>
               <div>
@@ -41,7 +42,7 @@ const Propuesta = () => {
                 </Link>
               </div>
             </div>
-            <h4>Destinatarios</h4>
+            <h5>Destinatarios</h5>
             <p>
               Corredores Inmobiliarios de los países con asociaciones miembros
               de CILA en actividad.
@@ -220,7 +221,7 @@ const Propuesta = () => {
         <RenderContent6 />
       </div>
 
-      <PropCarousal />
+      <Carousal/>
     </div>
   );
 };
