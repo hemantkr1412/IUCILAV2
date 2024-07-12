@@ -4,6 +4,7 @@ import Objectives from "./objectives/Objectives";
 import Somos from "./somos/Somos";
 import Carousal from "./carousal/Carousal";
 import Notice from "./notice/Notice";
+import PropCarousal from "../propuesta/propCarousal/propCarousal";
 
 const Home = () => {
   return (
@@ -46,7 +47,8 @@ const Home = () => {
         <Objectives />
         <div className="Gline"></div>
         <Somos />
-        <Carousal />
+        {/* <Carousal /> */}
+        <PropCarousal/>
         <div className="Gline"></div>
         <Notice />
       </div>

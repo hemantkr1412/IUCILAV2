@@ -8,7 +8,7 @@ import RenderContent4 from "./renderContent4";
 import RenderContent3 from "./renderContent3";
 import RenderContent2 from "./renderContent2";
 import PropCarousal from "./propCarousal/propCarousal";
-import Carousal from "../home/carousal/Carousal";
+// import Carousal from "../home/carousal/Carousal";
 
 const Propuesta = () => {
   const [activeButton, setActiveButton] = useState(1);
@@ -221,7 +221,7 @@ const Propuesta = () => {
         <RenderContent6 />
       </div>
 
-      <Carousal/>
+      <PropCarousal/>
     </div>
   );
 };
