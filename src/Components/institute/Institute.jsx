@@ -29,7 +29,7 @@ const Institute = () => {
         {/* <video controls className="videoPlayer">
           <source src="/assets/video.mp4" />
         </video> */}
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3iS-wB66E4M?si=QDk-I5BwKR5geqTy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3iS-wB66E4M?si=YpF63RyJVnahIlnL?&controls=0"  frameborder="0" allowfullscreen></iframe>
       </div>
       <div className="backgroundColor">
         <Element name="desarrollar">
@@ -102,8 +102,7 @@ const Institute = () => {
                   La Confederación Inmobiliaria Latinoamericana, fue fundada en
                   2012, integra a las organizaciones líderes del mercado de
                   bienes raíces en la región y representa a más de 700.000
-                  Corredores y Empresas Inmobiliarias en 18 países de Lati-
-                  noamérica.
+                  Corredores y Empresas Inmobiliarias en 18 países de Latinoamérica.
                 </p>
                 <p>
                   Brinda soporte institucional a toda la comunidad inmobiliaria,
@@ -128,7 +127,7 @@ const Institute = () => {
                 <p>
                   En 1997 la Universidad Gastón Dachary fue la primera
                   institución autorizada por la Comisión Nacional de Evaluación
-                  y Acreditación Universitaria (CO- NEAU), y se somete
+                  y Acreditación Universitaria (CONEAU), y se somete
                   periódicamente a las evaluaciones externas del organismo que
                   analiza todas sus funciones, y atiende las recomendaciones
                   para el mejora- miento permanente de la calidad.
@@ -222,7 +221,7 @@ const Institute = () => {
             <div className="funbox">
               <div className="funboxImg1">
                 {/* <video controls src="/assets/fun1.mp4" /> */}
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XuNAFjuF7rs?si=R3NIM2OLL_Ab6NWK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XuNAFjuF7rs?si=xP4vdU8NHSdWKIAm&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
               <div className="funbox-texts">
                 <div className="funText">
@@ -265,11 +264,11 @@ const Institute = () => {
                 <div className="funText">
                   <h3>Presentación de IUCILA</h3>
                   <p>
-                    Se presentó el Instituto Universitario en Correta- je
+                    Se presentó el Instituto Universitario en Corretaje
                     Inmobiliario Latinoamericano (IUCILA) y sus líneas de
-                    trabajo a las autoridades de las federa- ciones de 19 países
+                    trabajo a las autoridades de las federaciones de 19 países
                     latinoamericanos presentes en Asamblea General Ordinaria de
-                    la Confedera- ción Latinoamericana.
+                    la Confederación Latinoamericana.
                   </p>
                   <p>Ciudad de Panamá, sep/2023</p>
                 </div>

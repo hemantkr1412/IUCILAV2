@@ -95,7 +95,7 @@ const Navbar = () => {
             {showcomunidadMenu && (
               <div className="sub-menu">
                 <p onClick={() => handleScrollToSection("/comunidadAcademica", "directors")}>
-                  Director Ejecutivo
+                Autoridades
                 </p>
                 <p onClick={() => handleScrollToSection("/comunidadAcademica", "docentes")}>
                   Nuestros Docentes

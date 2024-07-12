@@ -11,7 +11,7 @@ const Footer = () => {
         <p>Noticias</p>
       </div>
       <div className="address">
-        <p>Avda, Callao Nro. 67</p>
+        <p>Avda. Callao Nro. 67</p>
         <p>2do piso</p>
         <p>Cludad Autonoma de Buenos Aires</p>
         <div className="socialLinks">

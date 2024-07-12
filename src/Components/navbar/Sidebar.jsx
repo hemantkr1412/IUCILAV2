@@ -153,7 +153,7 @@ const Sidebar = () => {
                 onClick={toggleMenu}
                 to="directors"
               >
-                <p>Directors Ejecutivo</p>
+                <p>Autoridades</p>
               </Scroll>
               <div className="whiteLine" />
               <Scroll
