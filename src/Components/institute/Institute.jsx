@@ -26,10 +26,10 @@ const Institute = () => {
       </div>
 
       <div className="instituteVideo">
-        {/* <video controls className="videoPlayer">
-          <source src="/assets/video.mp4" />
-        </video> */}
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3iS-wB66E4M?si=YpF63RyJVnahIlnL?&controls=0"  frameborder="0" allowfullscreen></iframe>
+        <video controls className="videoPlayer">
+          <source src="/assets/video1.mp4" />
+        </video>
+        {/* <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3iS-wB66E4M?si=YpF63RyJVnahIlnL?&controls=0"  frameborder="0" allowfullscreen></iframe> */}
       </div>
       <div className="backgroundColor">
         <Element name="desarrollar">
