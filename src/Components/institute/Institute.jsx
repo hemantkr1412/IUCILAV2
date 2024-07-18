@@ -26,10 +26,10 @@ const Institute = () => {
       </div>
 
       <div className="instituteVideo">
-        <video controls className="videoPlayer">
+        {/* <video controls className="videoPlayer">
           <source src="/assets/video1.mp4" />
-        </video>
-        {/* <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3iS-wB66E4M?si=YpF63RyJVnahIlnL?&controls=0"  frameborder="0" allowfullscreen></iframe> */}
+        </video> */}
+       <iframe width="99%" height="99%" src="https://www.youtube.com/embed/oOKSVpo9aFo?si=YQaPv9KjdFYrgewj" frameBorder="0"  allowFullScreen></iframe>
       </div>
       <div className="backgroundColor">
         <Element name="desarrollar">
@@ -219,9 +219,9 @@ const Institute = () => {
           </h2>
           <div className="funboxes">
             <div className="funbox">
-              <div className="funboxImg">
-                <video controls src="/assets/video2.mp4" />
-                {/* <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XuNAFjuF7rs?si=xP4vdU8NHSdWKIAm&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+              <div className="funboxImg1">
+                {/* <video controls src="/assets/video2.mp4" /> */}
+                <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/3tQoSofeQaI?si=5BtTnGNBx_WC9Gqa" frameBorder= "0" allowFullScreen></iframe>
               </div>
               <div className="funbox-texts">
                 <div className="funText">

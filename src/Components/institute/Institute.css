@@ -259,6 +259,7 @@
   width: 80%;
   /* align-items: center; */
   justify-content: space-between;
+  height: 450px;
 }
 
 .funboxImg, .funboxImg1 {
@@ -366,6 +367,10 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .funbox{
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 935px) {
@@ -375,6 +380,7 @@
 
 .funbox{
   flex-direction: column;
+  
 }
 .funboxImg{
   width: 100%;
