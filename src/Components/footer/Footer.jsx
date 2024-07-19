@@ -6,14 +6,20 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footerLinks">
+        <Link to="/">
         <p className="fl1">Home</p>
+        </Link>
+        <a href="https://cila.la/" target="_blank">
         <p>CILA</p>
+        </a>
+        <Link to="/noticias">
         <p>Noticias</p>
+        </Link>
       </div>
       <div className="address">
-        <p>Avda. Callao Nro. 67</p>
+        <p>Avda. Callao Nro. ó7</p>
         <p>2do piso</p>
-        <p>Cludad Autonoma de Buenos Aires</p>
+        <p>Ciudad Autónoma de Buenos Aires</p>
         <div className="socialLinks">
           <Link to="https://www.instagram.com/iucilaok" target="_blank">
             <img src="/assets/insta.webp" />
@@ -28,7 +34,7 @@ const Footer = () => {
       </div>
 
       <div className="footerLogo">
-        <Link to=' https://cila.la/' target="_blank">
+        <Link to='/'>
         <img src="/assets/footerLogo.webp" />
         </Link>
         <div className="copyrightM">

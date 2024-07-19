@@ -23,14 +23,14 @@
 }
 
 .propintro h1 {
-  font-size: 55px;
+  font-size: 30px;
   font-weight: 800;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
 .propintro p {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 0;
   /* text-align: justify; */
@@ -130,7 +130,7 @@
 }
 
 .formbox h1 {
-  font-size: 68px;
+  font-size: 42px;
   font-weight: 800;
   margin-bottom: 1rem;
 }
@@ -188,6 +188,8 @@
 .formbox-text p {
   margin-top: 0;
 }
+
+
 .formbox-text-inner,
 .formbox-text-inner1 {
   display: flex;
