@@ -19,7 +19,7 @@ export const directorsInfo = [
   },
   {
     title:"Secretario de Innovación y Desarrollo Educativo | Universidad Gastón Dachary",
-    img: "/assets/d4.webp",
+    img: "/assets/d4.jpg",
     name: "Ing. Roberto Suenaga",
     para: "Decano del Departamento de Ingeniería de la UGD (2014- 2022). Vicerrector de la UGD desde (2009- 2014). Ingeniero en Sistemas de Información. Docente universitario en informática desde el año 1997. Posgraduado en formación por competencias y aprendizaje centrado en el estudiante para carreras de ingeniería. Maestrando en tecnologías aplicadas a la educación. Diplomado en innovación abierta",
 },

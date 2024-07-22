@@ -6,7 +6,7 @@
   width: 100%;
   background-image: url("/assets/objective.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   padding: 4rem;
   gap: 1.5rem;
   z-index: 4;
@@ -50,24 +50,27 @@
     padding: 4rem 2rem 0 2rem;
   }
 
-  .obj,
+  /* .obj,
   .val {
     width: 386px;
-  }
+  } */
 }
 
-@media only screen and (max-width: 935px) {
+/* @media only screen and (max-width: 935px) {
   .obj,
   .val {
     width: 315px;
   }
-}
+
+  
+} */
 
 @media only screen and (max-width: 769px) {
   .objectives {
     background-image: url("/assets/objectiveM.png");
     min-height: 100vh;
     padding: 3rem 2rem 0rem 2rem;
+    background-size: 100% 100%;
   }
 
   .greenLine {

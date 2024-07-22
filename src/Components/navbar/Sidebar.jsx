@@ -143,7 +143,7 @@ const Sidebar = () => {
           )}
           <div className="mRedLine" />
           <Link to="/comunidadAcademica" onClick={toggleComunidad}>
-            <p>Comunidad Academica</p>
+            <p>Comunidad Académica</p>
           </Link>
           {isComunidadDrop && (
             <div className="sub-menu">
