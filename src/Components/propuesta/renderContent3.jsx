@@ -164,7 +164,7 @@ const RenderContent3 = () => {
               width={350}
               height={300}
               style={{border:"none"}}
-              src="https://inscripciones.ugd.edu.ar/simplified_contact_cases/new"
+              src="https://inscripciones.ugd.edu.ar/simplified_contact_cases/new?theme=iucila&account=001Hp00002dZGl0IAG&office=a0ahp00000ah7riial"
             />
           </div>
         </div>

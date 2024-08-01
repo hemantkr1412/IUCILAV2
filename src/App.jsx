@@ -9,6 +9,7 @@ import Comunidad from "./Components/comunidad/Comunidad";
 import Institute from "./Components/institute/Institute";
 import Propuesta from "./Components/propuesta/Propuesta";
 import Noticias from "./Components/noticias/Noticias";
+import ChatbotComponent from "./Components/chatbot/chatbot";
 
 function Main() {
   const location = useLocation();
@@ -23,6 +24,7 @@ function Main() {
         <Route path="/propuestaAcademica" element={<Propuesta />} />
         <Route path="/noticias" element={<Noticias />} />
       </Routes>
+      <ChatbotComponent />
     </div>
   );
 }
