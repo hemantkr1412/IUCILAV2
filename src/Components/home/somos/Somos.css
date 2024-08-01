@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-image: url("/assets/somos.webp");
+    background-image: url("/assets/somos.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -22,7 +22,7 @@
     color: #272727;
     font-size: 56px;
     font-weight: 900;
-    padding: 6rem 4rem 6rem 16rem;
+    padding: 6rem 22rem 6rem 6rem;
   }
   
   .somosTitle:hover h1 {
@@ -81,7 +81,7 @@
   @media only screen and (max-width: 769px) {
 
   .somosTitle {
-    background-image: url("/assets/somosM.webp");
+    background-image: url("/assets/somosM.png");
     min-height: 642px;
     justify-content: flex-end;
     align-items: flex-start;

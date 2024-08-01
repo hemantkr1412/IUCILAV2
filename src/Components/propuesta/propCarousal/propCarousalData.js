@@ -6,13 +6,13 @@ export const propCarousalData = [
       "Este curso te permitirá adquirir competencias para trabajar con clientes internacionales, proporcionándote las herramientas necesarias para destacarte en el mercado inmobiliario global. ",
   },
   {
-    img: "/assets/slider1.webp",
+    img: "/assets/slider1.png",
     header: "Diploma Universitario en Tasación de Inmuebles",
     description:
       "Este curso te permitirá adquirir competencias para trabajar con clientes internacionales, proporcionándote las herramientas necesarias para destacarte en el mercado inmobiliario global.",
   },
   {
-    img: "/assets/slider2.webp",
+    img: "/assets/slider2.png",
     header: "Diploma Universitario en Negociación y Marketing Inmobiliario",
     description:
       "Este curso te permitirá adquirir competencias para trabajar con clientes internacionales, proporcionándote las herramientas necesarias para destacarte en el mercado inmobiliario global.",
@@ -24,7 +24,7 @@ export const propCarousalData = [
       "Este curso te permitirá adquirir competencias para trabajar con clientes internacionales, proporcionándote las herramientas necesarias para destacarte en el mercado inmobiliario global.",
   },
   {
-    img: "/assets/slider4.webp",
+    img: "/assets/slider4.png",
     header: "Tecnicatura Universitaria en Corretaje y Negocios Inmobiliarios ",
     description:
       "Este curso te permitirá adquirir competencias para trabajar con clientes internacionales, proporcionándote las herramientas necesarias para destacarte en el mercado inmobiliario global.",
