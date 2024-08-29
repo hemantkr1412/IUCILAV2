@@ -26,6 +26,7 @@
 .box {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .box-item1 {

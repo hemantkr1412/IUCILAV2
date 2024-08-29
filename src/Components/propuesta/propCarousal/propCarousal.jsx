@@ -4,12 +4,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState, useEffect, useRef } from "react";
 import { propCarousalData } from "./propCarousalData";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const PropCarousal = () => {
   const [slidesToShow, setSlidesToShow] = useState(2);
   const [slidesToScroll, setSlidesToScroll] = useState(1);
   const sliderRef = useRef(null);
   const [autoplay, setAutoplay] = useState(false);
+  const navigate = useNavigate();
+
+  const handleScrollToSection = (to, element) => {
+    navigate(to);
+    setTimeout(() => {
+      const section = document.getElementById(element);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block:"start" });
+      }
+    }, 500);
+  };
 
   useEffect(() => {
     const updateSlidesToShow = () => {
@@ -71,7 +83,7 @@ const PropCarousal = () => {
       <div className="slider-box">
         <Slider ref={sliderRef} {...settings} className="slider">
           {propCarousalData.map((box, index) => (
-            <div className="box">
+            <div className="box" onClick={() => handleScrollToSection("/propuestaAcademica", box.href)}>
               <div key={index} className="box-item1">
                 <img src={box.img}  />
                 <div className="box-text">

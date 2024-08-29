@@ -7,6 +7,22 @@ const Notice = () => {
     <div className="notice">
       <h2>Últimas noticias</h2>
       <div className="noticeContainer">
+      <Link target="_blank" to="https://www.primeraedicion.com.ar/nota/100903469/el-instituto-universitario-de-corretaje-inmobiliario-latinoamericano-presento-la-certificacion-cila/" style={{background:"#fff", borderRadius:"10px"}}>
+          <div className="noticeBox">
+            <img src="/assets/newNotice.jpg" style={{
+              height:"240px"
+            }}/>
+            <div className="notice-text">
+              <h5>24 julio 2024</h5>
+              <h4>
+              El Instituto Universitario de Corretaje Inmobiliario Latinoamericano presentó la Certificación CILA
+              </h4>
+              <p>
+              Se trata de una validación de carácter global que surge de la articulación entre la Universidad Gastón Dachary (UGD) y la Confederación Inmobiliaria Latinoamericana (CILA).
+              </p>
+            </div>
+          </div>
+        </Link>
         <Link target="_blank" to="https://www.primeraedicion.com.ar/nota/100755715/ugd-se-afianza-como-referencia-academica-del-rubro-inmobiliario-en-latinoamerica/">
           <div className="noticeBox">
             <img src="/assets/notice1.webp" />
@@ -43,7 +59,7 @@ const Notice = () => {
             </div>
           </div>
         </Link>
-        <Link target="_blank" to="https://economis.com.ar/la-ugd-y-autoridades-del-sector-inmobiliario-abordaron-el-blanqueo-para-la-compra-de-propiedades-en-caba/">
+        {/* <Link target="_blank" to="https://economis.com.ar/la-ugd-y-autoridades-del-sector-inmobiliario-abordaron-el-blanqueo-para-la-compra-de-propiedades-en-caba/">
           <div className="noticeBox">
             <img src="/assets/notice3.webp" />
             <div className="notice-text">
@@ -60,7 +76,7 @@ const Notice = () => {
               </p>
             </div>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
